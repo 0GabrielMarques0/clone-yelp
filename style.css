@@ -1,8 +1,6 @@
 section {
     width: 100%;
-
     height: 510px;
-
     justify-content: space-around;
     background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/b63753e02fe3/assets/img/home/hero_photos/w1be4pCC7p0rySKSbvSBPA.jpg);
     background-size: cover;
@@ -13,43 +11,87 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }   
 .home {
-    width: fit-content;
-    height: fit-content;
+    display:flex;
+    justify-content:center;
+    color:white;
+    align-items: center;
+    width: 110px;
+    height: 50px ;
     padding: 5px 5px;
     background-color: transparent;
     color: #fff;
+    background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/2d2a7a4342fc/assets/img/brand/logo_desktop_white.svg);
+    background-size: cover;
 }
-.textsearch {
 
-}
 .search {
-    width: fit-content;
-    height: fit-content;
-    border-radius: 1px;
-    background-color:   rgb(255, 81, 0);
-    
+    display: flex;
+    align-items:center;
+    margin-top:10px
 }
+
+.textsearch {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border:0px solid 
+}
+.searchsymbol {
+    justify-content:center;
+    align-content:center;
+    display:flex;
+    padding: 5px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:  red; 
+}
+.searchsymbol:hover {
+    background-color:  rgb(255, 81, 0);
+}
+
+
 
 .tipo1 {
-  
-    justify-content: center;
-    width: fit-content;
-    height: 50px;
-    padding: 1px 1px;
-    background-color: transparent;
+    
     color: white;
-    border: 1px;
-    border-radius: 2px;
+    padding: 10px 10px;
+    border-radius: 5px;
 }
 
 .tipo1:hover {
-    background-color: white;
-    opacity: 0.2;
+    background-color: gray;
+    opacity: 1;
 }
 
 .tipo2 {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
 
+.tipo2:hover {
+    background-color: gray;
+    opacity: 1;
+}
+
+.tipo3 {
+    padding: 10px 20px;
+    background-color:red;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.tipo3:hover {
+    background-color:  rgb(255, 81, 0);
+}
+
+nav {
+    display:flex;
+    padding:10px 10px;
+    justify-content:;
 }
