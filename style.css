@@ -22,7 +22,7 @@ header {
     padding: 5px 5px;
     background-color: transparent;
     color: #fff;
-    background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/2d2a7a4342fc/assets/img/brand/logo_desktop_white.svg);
+    background-image: url();
     background-size: cover;
 }
 
@@ -32,12 +32,19 @@ header {
     margin-top:10px
 }
 
-.textsearch {
+.textsearchlocal {
     width: 200px;
     height: 50px;
-    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
     border:0px solid 
 }
+
+.textsearchplace {
+    width: 200px;
+    height: 50px;
+    border:0px solid 
+}
+
 .searchsymbol {
     justify-content:center;
     align-content:center;
@@ -45,7 +52,7 @@ header {
     padding: 5px 5px;
     width: 40px;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 0px;
     background-color:  red; 
 }
 .searchsymbol:hover {
