@@ -154,7 +154,9 @@ header {
     color: #fff;
     text-decoration: none;
 }
-
+.creds a:hover{
+    text-decoration: underline;
+}
 .atividades {
     display: flex;
     justify-content: center;
@@ -205,7 +207,6 @@ header {
     padding: 20px;
 }
 
-
  .fotoerror {
     width: 259px;
     height: 190px;
@@ -231,4 +232,23 @@ header {
 }
 .ver-mais-atvv a:hover{
     text-decoration: underline;
+}
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cats {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+    padding: 36px;
+}
+.click div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
