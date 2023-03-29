@@ -51,7 +51,6 @@ header {
     justify-content:center;
     align-items:center;
     width: 80px;
-    height: 100%;
     border-radius: 0px 5px 5px 0px;
     background-color:  red;
 }
@@ -60,8 +59,8 @@ header {
 }
 
 .searchsymbol {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
 }
 
 .buttons {
@@ -246,7 +245,7 @@ header {
 .cats {
     display: flex;
     justify-content: space-around;
-    width: 61%;
+    width: 70%;
     flex-wrap: wrap;
     padding: 36px;
 }
@@ -273,4 +272,42 @@ header {
 }
 .cats img {
     padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 15px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+footer h2, a {
+    padding: 10px;
+}
+
+footer h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+footer a {
+    display: flex;
+    align-items: center;
+    font-size:16px ;
+    color: gray;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.autoral{
+    margin-left: 100px;
+    margin-bottom: 49px;
+    color: rgb(116, 115, 115);
+    font-size: 14px;
 }
