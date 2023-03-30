@@ -5,14 +5,14 @@ header {
     background-position: center;
     background: linear-gradient((90deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 55%));
 }
-
 .container-top {
-    padding: 17px 25px;
+    padding-top: 17px;
+    padding-left: 25px;
+    padding-right: 25px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-
 .home {
     display:flex;
     color:white;
@@ -23,7 +23,6 @@ header {
     background-color: transparent;
     color: #fff;
 }
-
 .search {
     display: flex;
     margin-left: 20px;
@@ -31,7 +30,6 @@ header {
     width: 40% ;
     height: 50px;
 }
-
 .search input {
     width: 70%;
     font-size: 16px;
@@ -40,12 +38,9 @@ header {
     border:none;
     outline: none; 
 }
-
 .textsearchlocal {
     border-radius: 5px 0px 0px 5px;
 }
-
-
 .searchbutton {
     display:flex;
     justify-content:center;
@@ -57,30 +52,25 @@ header {
 .searchbutton:hover {
     background-color:  rgb(255, 81, 0);
 }
-
 .searchsymbol {
     width: 30px;
     height: 30px;
 }
-
 .buttons {
     justify-content: space-evenly;
     align-items: center;
     font-weight: 700;
     display: flex;
-    margin-left: 50px;
+    margin-left: 25px;
 }
-
 .tipo1 {
     color: white;
     padding: 10px;
     border-radius: 5px;
 }
-
 .tipo1:hover {
     background-color: rgba(158, 158, 148, 0.5);
 }
-
 .tipo2 {
     margin: 5px;
     padding: 10px 20px;
@@ -88,12 +78,10 @@ header {
     border-radius: 5px;
     color: white;
 }
-
 .tipo2:hover {
     background-color: rgba(158, 158, 148, 0.3);
     backdrop-filter: blur(10px);
 }
-
 .tipo3 {
     margin: 5px;
     padding: 10px 15px;
@@ -101,11 +89,9 @@ header {
     border-radius: 5px;
     color: white;
 }
-
 .tipo3:hover {
     background-color:  rgb(255, 81, 0);
 }
-
 .menus {
     display:flex;
     justify-content: flex-start;
@@ -113,13 +99,57 @@ header {
     color: white;
     margin-left: 190px;
 }
-.menus a {
-    display: flex;
-    justify-content: center;
+.menus ul ul {
+  display: none;
+}
+.menus ul li:hover > ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menus {
+    font-size: 14px;
+}
+.menus ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menus ul li {
+    display: inline-block;
+    position: relative;
     align-items: center;
+}
+.menus ul li a {
+    color: #fff;
+    display: flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    align-items: center;
+}
+.menus ul ul {
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    width: 385px ;
+    border-radius: 5px;
+}
+.menus ul ul li {
+    display: block;
+}
+.menus ul ul li a {
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.menus ul ul li img {
+    color: #000000;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.menus a {
     font-size: 19px;
     padding: 5px  0 ;
-    margin-right: 30px;
 }
 .seta-baixo{
     margin-top: 1px;
@@ -127,28 +157,27 @@ header {
     width: 24px;
     height: 24px;
 }
-
 .intro {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 64px 32px 0 0px ;
-    margin-right: 70px;
+    margin-left: 50px;
     color: #fff;
     font-size: 55px;
     font-weight: 700;
 }
-
 .creds {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 170px;
-    padding-left: 125px;
+    padding-top: 190px;
+    margin-left: 55px;
     color: #fff;
     font-size: 16px;
 }
 .creds a{
+    padding: 0;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -167,7 +196,6 @@ header {
     font-size: 30px;
     font-weight: 700;
 }
-
 .fotos-dos-usuarios {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -175,7 +203,6 @@ header {
     padding: 36px;
  
 }
-
 .postfotos {
     display: flex;
     flex-direction: column;
@@ -193,7 +220,6 @@ header {
 .postfotos a:hover{
     text-decoration: underline;
 }
-
 .fotosheader {
     display: flex;
     justify-content: center;
@@ -205,7 +231,6 @@ header {
     flex-direction: column;
     padding: 20px;
 }
-
  .fotoerror {
     width: 259px;
     height: 190px;
@@ -219,7 +244,6 @@ header {
 }.fotoslike img {
     margin-right: 10px;
 }
-
 .ver-mais-atvv {
     display: flex;
     justify-content: center;
@@ -257,7 +281,6 @@ header {
     width: 150;
     height: 200;
 }
-
 .cats a {
     display: flex;
     justify-content: center;
@@ -273,24 +296,20 @@ header {
 .cats img {
     padding: 10px;
 }
-
 footer {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     margin: 15px;
 }
-
 footer div {
     display: flex;
     flex-direction: column;
     padding: 16px;
 }
-
 footer h2, a {
     padding: 10px;
 }
-
 footer h2 {
     font-size: 20px;
     font-weight: 700;
